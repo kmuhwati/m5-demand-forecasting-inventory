@@ -1,0 +1,37 @@
+fold,model,demand_class,n_series,median_rmsse
+1,Moving average (28d),erratic,271,0.6652161814870555
+1,Moving average (28d),intermittent,5391,0.7033976335654315
+1,Moving average (28d),lumpy,1442,0.6350617831291051
+1,Moving average (28d),smooth,1126,0.7388117354269138
+1,AutoETS (statsforecast),erratic,271,0.6717026524634957
+1,AutoETS (statsforecast),intermittent,5391,0.6981716306386561
+1,AutoETS (statsforecast),lumpy,1442,0.632755545287035
+1,AutoETS (statsforecast),smooth,1126,0.7280344038199231
+1,LightGBM global,erratic,271,0.6488275011055752
+1,LightGBM global,intermittent,5391,0.6820504840159626
+1,LightGBM global,lumpy,1442,0.6169552429816765
+1,LightGBM global,smooth,1126,0.7161282534551463
+2,Moving average (28d),erratic,261,0.6917511898332019
+2,Moving average (28d),intermittent,5390,0.7054488724236943
+2,Moving average (28d),lumpy,1415,0.6571596188214766
+2,Moving average (28d),smooth,1164,0.7467485431014478
+2,AutoETS (statsforecast),erratic,261,0.6902361717477128
+2,AutoETS (statsforecast),intermittent,5390,0.696747479076903
+2,AutoETS (statsforecast),lumpy,1415,0.6575882832744009
+2,AutoETS (statsforecast),smooth,1164,0.7246269746900862
+2,LightGBM global,erratic,261,0.6736028776129428
+2,LightGBM global,intermittent,5390,0.6841164090690434
+2,LightGBM global,lumpy,1415,0.6367985896949541
+2,LightGBM global,smooth,1164,0.704196594826997
+3,Moving average (28d),erratic,247,0.7193563221679422
+3,Moving average (28d),intermittent,5428,0.7117211116802671
+3,Moving average (28d),lumpy,1358,0.6730684304486692
+3,Moving average (28d),smooth,1197,0.7406520552022563
+3,AutoETS (statsforecast),erratic,247,0.6787367685071225
+3,AutoETS (statsforecast),intermittent,5428,0.7065992448971194
+3,AutoETS (statsforecast),lumpy,1358,0.6690959609940215
+3,AutoETS (statsforecast),smooth,1197,0.7047948181251957
+3,LightGBM global,erratic,247,0.6659903736881962
+3,LightGBM global,intermittent,5428,0.693817622070594
+3,LightGBM global,lumpy,1358,0.6546703664024761
+3,LightGBM global,smooth,1197,0.693709496785696

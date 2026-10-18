@@ -1,0 +1,88 @@
+{
+  "n_series": 8230,
+  "origins": [
+    1857,
+    1885,
+    1913
+  ],
+  "critical_ratio": 0.75,
+  "train_rows": [
+    5834727,
+    5857729,
+    5878687
+  ],
+  "wrmsse": {
+    "LightGBM global": 0.5594,
+    "AutoETS (statsforecast)": 0.6871,
+    "Weekday-profile moving average": 0.7564,
+    "Seasonal naive (last week)": 0.7836,
+    "Moving average (28d)": 0.994
+  },
+  "lightgbm_vs_best_baseline_wrmsse_pct": 18.582031179182636,
+  "best_baseline": "AutoETS (statsforecast)",
+  "inventory": {
+    "Perfect foresight": {
+      "profit": 1190640.0017,
+      "share_of_perfect_profit": 1.0,
+      "fill_rate": 1.0,
+      "lost_units": 0.0,
+      "avg_units_on_hand": 0.0
+    },
+    "LightGBM + NB, q=0.75": {
+      "profit": 723185.5287,
+      "share_of_perfect_profit": 0.6074,
+      "fill_rate": 0.7986,
+      "lost_units": 332678.0,
+      "avg_units_on_hand": 3.9001
+    },
+    "LightGBM quantile, q=0.75": {
+      "profit": 711613.9488,
+      "share_of_perfect_profit": 0.5977,
+      "fill_rate": 0.8499,
+      "lost_units": 248007.0,
+      "avg_units_on_hand": 5.1052
+    },
+    "LightGBM point (mean)": {
+      "profit": 706940.5948,
+      "share_of_perfect_profit": 0.5937,
+      "fill_rate": 0.7581,
+      "lost_units": 399643.0,
+      "avg_units_on_hand": 3.3071
+    },
+    "Poisson MA, q=0.75": {
+      "profit": 705538.7108,
+      "share_of_perfect_profit": 0.5926,
+      "fill_rate": 0.7714,
+      "lost_units": 377792.0,
+      "avg_units_on_hand": 3.5847
+    },
+    "AutoETS point": {
+      "profit": 697082.4098,
+      "share_of_perfect_profit": 0.5855,
+      "fill_rate": 0.757,
+      "lost_units": 401479.0,
+      "avg_units_on_hand": 3.4233
+    },
+    "Moving-average point": {
+      "profit": 689948.8748,
+      "share_of_perfect_profit": 0.5795,
+      "fill_rate": 0.7392,
+      "lost_units": 430968.0,
+      "avg_units_on_hand": 3.1763
+    },
+    "Seasonal naive point": {
+      "profit": 571196.9539,
+      "share_of_perfect_profit": 0.4797,
+      "fill_rate": 0.6685,
+      "lost_units": 547596.0,
+      "avg_units_on_hand": 3.753
+    }
+  },
+  "best_policy": "LightGBM + NB, q=0.75",
+  "best_policy_profit_uplift_vs_best_point_pct": 2.2979206549022635,
+  "coverage_at_critical_ratio": {
+    "LightGBM quantile regression": 0.7455,
+    "Negative binomial around LightGBM mean": 0.8082,
+    "Poisson around 28d moving average": 0.8063
+  }
+}
